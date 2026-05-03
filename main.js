@@ -234,3 +234,22 @@ function stopMove() {
     
     player.src = "img/pixel_art_jh.png";
 }
+
+const leftBtn = document.getElementById("left-btn");
+const rightBtn = document.getElementById("right-btn");
+
+function bindMoveButton(button, dir) {
+    button.addEventListener("pointerdown", (e) => {
+        e.preventDefault();
+        button.setPointerCapture(e.pointerId);
+        startMove(dir);
+    });
+
+    button.addEventListener("pointerup", stopMove);
+    button.addEventListener("pointerleave", stopMove);
+    button.addEventListener("pointercancel", stopMove);
+
+}
+
+if (leftBtn) bindMoveButton(leftBtn, "left");
+if (rightBtn) bindMoveButton(rightBtn, "right");

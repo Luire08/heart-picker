@@ -216,6 +216,8 @@ body {
     background: none;
     border: none;
     cursor: pointer;
+    touch-action: none;
+    user-select: none;
 }
 
 .title {

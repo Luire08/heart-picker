@@ -63,18 +63,24 @@
                         <button
                             class="control-btn"
                             type="button"
+                            id="left-btn"
                             onmousedown="startMove('left')"
                             onmouseup="stopMove()"
-                            onmouseleave="stopMove()">
+                            onmouseleave="stopMove()"
+                            ontouchstart="startMove('left')"
+                            ontouchend="stopMove()">
                             <img src="img/left-arrow.png" alt="Mover para esquerda">
                         </button>
                         <hr>
                         <button
                             class="control-btn"
                             type="button"
+                            id="right-btn"
                             onmousedown="startMove('right')"
                             onmouseup="stopMove()"
-                            onmouseleave="stopMove()">
+                            onmouseleave="stopMove()"
+                            ontouchstart="startMove('right')"
+                            ontouchend="stopMove()">
                             <img src="img/right-arrow.png" alt="Mover para direita">
                         </button>
                     </nav>
