@@ -97,7 +97,7 @@ body {
 
 .countdown {
     position: absolute;
-    top: 4%;
+    top: 3.5%;
     left: 50%;
     transform: translate(-50%, -50%);
 
@@ -122,7 +122,7 @@ body {
     }
 
     to {
-        left: -120%;
+        left: -110%;
     }
 }
 
@@ -155,8 +155,8 @@ body {
     position: absolute;
     top: 5rem;
 
-    width: 8%;
-    height: 35%;
+    width: 10.5vw;
+    height: 20.5vh;
     background-color: #692747;
 
     border-radius: 0 25px 25px 0;
@@ -178,8 +178,8 @@ body {
 }
 
 .lives img {
-    width: 50px;
-    height: 50px;
+    width: 1.25em;
+    height: 1.25em;
     image-rendering: pixelated;
 }
 
@@ -212,8 +212,7 @@ body {
 
 .control-btn,
 .control-btn img {
-    margin: 2%;
-    width: 25%;
+    min-width: 15vw;
     background: none;
     border: none;
     cursor: pointer;
@@ -225,6 +224,8 @@ body {
 
 .control-btn img {
     pointer-events: none;
+    min-width: 50%;
+    min-height: 50%;
 }
 
 .title {
@@ -265,12 +266,11 @@ body {
         display: block;
         position: absolute;
         bottom: 0;
-        left: 50%;
+        left: 0;
         width: 100%;
         height: auto;
         max-width: 420px;
         pointer-events: none;
-        transform: translateX(-50%);
         z-index: 0;
         
     }
