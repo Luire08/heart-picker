@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Heart Picker</title>
+    </head>
+    <body>
+        
+        <main>
+            <!-- TELA INICIAL -->
+            <section class="home">
+
+                <header class="top-bar"></header>
+
+                <div class="content">
+                    <div class="logo">
+                        <h1 class="title">HEART PICKER</h1>
+                        <img src="img/cesta.png" alt="">
+                    </div><hr class="line">
+                    
+                    <button type="button" class="start-button" onclick="startGame()">Jogar</button>
+                </div>
+
+                <!-- corações (mobile) -->
+                 <img src="img/hearts-bg.png" alt="" class="hearts-bg">
+            
+            </section>
+
+            <!-- TELA DO JOGO-->
+            <section  class="game hidden">
+
+                <header class="top-bar">
+                    <div class="logo">
+                        <h1 class="title">HEART PICKER</h1>
+                        <img src="img/cesta.png" alt="">
+                    </div>
+                </header>
+
+                <section class="game-area">
+                    <div class="countdown"></div>
+                    <div class="lives">
+                        <ul>
+                            <li>
+                                <img src="img/red-heart-pixel.png" alt="" class="life-heart">
+                            </li>
+                             <li>
+                                <img src="img/red-heart-pixel.png" alt="" class="life-heart">
+                            </li>
+                             <li>
+                                <img src="img/red-heart-pixel.png" alt="" class="life-heart">
+                            </li>
+                        </ul>
+                    </div>
+                    <img src="img/pixel_art_jh.png" alt="" class="player">
+                    <img src="img/red-heart-pixel.png" alt="Pegue!" class="heart">
+                    <div class="message hidden"></div>
+                </section>
+
+                <section class="bottom-bar">
+                    <nav class="controls">
+                        <button
+                            class="control-btn"
+                            type="button"
+                            onmousedown="startMove('left')"
+                            onmouseup="stopMove()"
+                            onmouseleave="stopMove()">
+                            <img src="img/left-arrow.png" alt="Mover para esquerda">
+                        </button>
+                        <hr>
+                        <button
+                            class="control-btn"
+                            type="button"
+                            onmousedown="startMove('right')"
+                            onmouseup="stopMove()"
+                            onmouseleave="stopMove()">
+                            <img src="img/right-arrow.png" alt="Mover para direita">
+                        </button>
+                    </nav>
+                </section>
+
+            </section>
+        </main>
+
+        <script src="main.js"></script>
+    </body>
+</html>
